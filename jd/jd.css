@@ -257,16 +257,18 @@ div.am div{
     position:relative;
     padding-left:10px;
     z-index:1;
-    height:31px;
     display:block;
     color:#fff;
+    font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    line-height: 31px;
+    font-size: 14px;
 }
 div.am a{
     color:#fff;
     text-decoration: none;
-    line-height: 31px;
-    font-family: "microsoft yahei";
-    font-size: 14px;
+    /* line-height: 31px; */
+    /* font-family: "microsoft yahei"; */
+    /* font-size: 14px; */
     font-weight: 400;
 }
 div.am i{
@@ -308,8 +310,7 @@ div.am i{
 .news_title{
     padding:0 15px;
     border-bottom:1px dotted rgb(232, 232, 231);
-    height:43px;
-    line-height:43px;
+    line-height: 30px;
     overflow:hidden;
     color:rgb(102, 102, 102);
 }
@@ -334,7 +335,7 @@ div.n_more a{
 }
 .news_con{
     height: 140px;
-    padding:8px 0 0 15px;
+    padding: 3px 0 0 15px;
     overflow: hidden;
     display:block;
 }
@@ -344,11 +345,10 @@ div.n_more a{
 }
 ul.nl li{
     width:210px;
-    height:27px;
+    height: 24px;
     line-height: 27px;
     overflow:hidden;
     display:list-item;
-
 }
 ul.nl a{
     color:rgb(102, 102, 102);
@@ -407,16 +407,59 @@ ul.nl span{
     overflow:hidden;
     display:block;
 }
-.ima{
-    float:left;
-    width:1210px;
-    height:151px;
-    display:block;
+.today .mt{
+    width: 212px;
+    height: 154px;
+    float: left;
 }
-div.today a{
-    position:relative;
-    display:block;
-
+.today .mc{
+    margin-left: 212px;
+}
+.slider_main{
+    height: 164px;
+    float: left;
+    margin-right: -1px;
+}
+.slider_panel div{
+    float: left;
+    width: 249px;
+    overflow: hidden;
+}
+.slider_panel .fore{
+    margin-right: 1px;
+}
+.c_i li{
+    width: 201px;
+    float: left;
+    padding-bottom: 15px;
+}
+.c_i .p_img{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.c_i .p_img a{
+    text-align: center;
+}
+.c_i .p_img a img{
+    vertical-align: middle;
+}
+.c_i .p_info{
+    padding: 0 36px;
+}
+.c_i .p_name{
+    height: 36px;
+    margin-bottom: 6px;
+}
+.c_i .p_price{
+    color: rgb(181, 29, 26);
+    font-size: 18px;
+}
+.c_i .p_price i{
+    font-size: 14px;
+    font-style: normal;
+}
+.like_li2 .p_info{
+    border-left: 1px solid rgb(230,230,230);
 }
 .like{
     width:1210px;
@@ -461,10 +504,7 @@ div.like_title h2{
     display:block;
 
 }
-.like_im{
-    display:block;
 
-}
 .s_list{
     position:relative;
     width:260px;
@@ -659,8 +699,42 @@ div.jd_special h2{
     overflow:hidden;
     position:relative;
     display:block;
-
+    border: 1px solid rgb(237, 237, 237);
 }
+.has_col1,.has_col2,.has_col3,.has_brands{
+    float: left;
+    background: rgb(247,247,247);
+    position: relative;
+}
+.has_col1 .has_item{
+    display: block;
+    position: relative;
+    width: 403px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    border-right: 1px solid rgb(237, 237, 237);
+    height: 246px;
+    overflow: hidden;
+}
+.has_col1 .area_tit{
+    font: 700 15px/40px 'Microsoft Yahei';
+    text-align: center;
+    margin: 0 20px;
+    color: rgb(51,51,51);
+    border-bottom: 1px dashed rgb(224, 224, 224);
+}
+.has_col1 .sub_tit{
+    position: absolute;
+    top: 108px;
+    left: 17px;
+}
+.has_col1 .has_item .tit{
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.has_col1 .promotion{color: rgb(200, 22, 35);}
 .am_con{
     display:none;
     width:999px;
@@ -672,6 +746,77 @@ div.jd_special h2{
     overflow:hidden;
     z-index:3;
     min-height: 500px;
+}
+.has_col1 .has_item_small{
+    display: block;
+    position: relative;
+    width: 201px;
+    float: left;
+}
+.has_col1 .has_item_small .sub-tit{
+    position: absolute;
+    top: 48px;
+    left: 10px;
+}
+.has_col1 .has_item_small .tit{
+    font-size: 16px;      
+    font-family: 'Microsoft Yahei';      
+    font-weight: 700;      
+    text-align: center;      
+    margin-bottom: 12px;
+}
+.has_col2 .has_item{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    border-right: 1px solid rgb(237, 237, 237);
+    overflow: hidden;
+    width: 228px;
+    height: 246px;
+}
+.has_col2 .area_tit{
+    font: 700 15px/40px 'Microsoft Yahei';
+    text-align: center;
+    margin: 0 20px;
+    color: rgb(51,51,51);
+    border-bottom: 1px dashed rgb(224, 224, 224);
+}
+.has_col2 .sub_tit{
+    position: absolute;
+    left: 10px;
+    top: 109px;
+}
+.has_col2 .tit{
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.has_col2 .promotion{
+    color: rgb(200, 22, 35);
+}
+.has_col2 .has_item_small{
+    display: block;
+    position: relative;
+    width: 201px;
+    float: left;
+}
+.has_col2 .has_item_small .sub-tit{
+    position: absolute;
+    top: 48px;
+    left: 10px;
+}
+.brands_left,.brands_right{
+    float: left;
+}
+.has_brands{
+    width: 171px;
+    float: right;
+}
+.brands_left{border-right: 1px dashed rgb(224, 224, 224);}
+.brands_right{
+    
 }
 .am_con.am_con2{
     display:block;
@@ -898,7 +1043,7 @@ ul.clothes_tab a{
 .con_right7,
 .con_right8,
 .con_right9{
-    width:880px;
+    width: 880px;
     height:633px;
     position:relative;
     float:left;
@@ -906,6 +1051,7 @@ ul.clothes_tab a{
 }
 .con_right1{
     display:block;
+    border-bottom: 1px solid rgb(237, 237, 237);
 }
 .con_right2,
 .con_right3,
@@ -1061,3 +1207,24 @@ div.foot img{
     width:328px;
     height:157px;
 }
+.main_body,.main_extra{float: left;}
+.main_body{width: 660px;}
+.main_extra{
+    width: 219px;
+    border-right: 1px solid rgb(237, 237, 237);
+}
+.main_body1,.main_body2{float: left;}
+.main_body3,.main_body4,.main_body5,.main_body6{
+    float: right;
+    border-right: 1px solid rgb(237, 237, 237);
+}
+.main_body3{
+    position: absolute;
+    right: 220px;
+}
+.main_body4{
+    position: absolute;
+    right: 220px;
+    top: 160px;
+}
+.main_body5{position: absolute;      right: 220px;top: 320px;}
