@@ -95,7 +95,6 @@ a{
     outline: 0;
     font-size: 14px;
     font-family: "microsoft yahei";
-    font: 13.3333px Arial;
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -120,7 +119,6 @@ a{
     padding: 1px 6px;
     text-align: center;
     margin: 0em;
-    font: 17px Arial;
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -133,16 +131,40 @@ a{
 .shopping{
     position:relative;
     margin:25px 65px 0 0;
-    background: rgb(241, 241, 241);
+    background: rgb(249, 249, 249);
     text-align: center;
     float:right;
     width:141px;
     height:36px;
 }
-.sc{
-    width:auto;
-    margin:11px 0;
-    height:30px;
+.shopping .dorpdown_icon{
+    position: relative;
+    width:75px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 0 28px 0 36px;
+    text-align: center;
+}
+.dorpdown_icon .di_left{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    background: url('./images/047.png') 0 -58px no-repeat;
+    top: 9px;
+    left: 18px;
+    height: 16px;
+    width: 18px;
+}
+.dorpdown_icon .di_right{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    font: 400 13px/13px simsun;
+    top: 11px;
+    right: 10px;
+    height: 13px;
+    width: 7px;
 }
 .hotwords{
     position:relative;
