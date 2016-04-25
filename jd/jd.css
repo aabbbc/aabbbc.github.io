@@ -1128,6 +1128,19 @@ ul.clothes_tab a{
     position:relative;
 
 }
+ul.clothes_tab .clothes_selected a{
+    border-left: solid 1px rgb(200, 22, 35);
+    border-right: solid 1px rgb(200, 22, 35);
+    border-top: solid 3px rgb(200, 22, 35);
+    position: absolute;
+    height: 33px;
+    line-height: 30px;
+    color: rgb(200, 22, 35);
+    top:-1px;
+    left: -1px;
+
+
+}
 .clothes_con{
     overflow:hidden;
     display:block;
@@ -1148,25 +1161,16 @@ ul.clothes_tab a{
 .con_right7,
 .con_right8,
 .con_right9{
+    display:none;
     width: 880px;
     height:633px;
     position:relative;
     float:left;
     overflow:hidden;
-}
-.con_right1{
-    display:block;
     border-bottom: 1px solid rgb(237, 237, 237);
 }
-.con_right2,
-.con_right3,
-.con_right4,
-.con_right5,
-.con_right6,
-.con_right7,
-.con_right8,
-.con_right9{
-    display:none;
+.con_right_selected{
+    display:block;
 }
 .brands{
     margin-top:10px;

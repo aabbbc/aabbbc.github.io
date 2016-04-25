@@ -25,7 +25,7 @@ $('.am_c2').hover(function() {
 }, function() {
     $('.c2_hover').attr('class', 'c2');
 });
-
+/*--------------以上为全部分类导航栏-------------*/
 var co=$('.like_con1>ul');
 var ex=0;
 $('#btn1').click(function(){
@@ -38,6 +38,7 @@ $('#btn1').click(function(){
 
 
 });
+/*--------------以上为换一换按钮-------------*/
 var butt=$('.slider-nav>li');
 var con=$('.slider-main>li');
 
@@ -92,3 +93,19 @@ setInterval(function(){
     $(con[i]).addClass('slider-panel-selected').fadeIn();
 });
 */
+/*--------------以上为轮播图-------------*/
+var tabs=$('.clothes_tab>li');
+tabs.each(function(t){
+    $(tabs[t]).mouseenter(function(){
+        if($(tabs[t]).hasClass('clothes_selected')){
+        return;
+        }
+        var s_tab=$('.clothes_tab .clothes_selected');
+        $(s_tab).removeClass('clothes_selected');
+        $(tabs[t]).addClass('clothes_selected');
+        var s_right=$('.clothes_con .con_right_selected');
+        $(s_right).removeClass('con_right_selected');
+        $('div.con_right'+(t+1)+'').addClass('con_right_selected');
+    });
+});
+/*--------------以上为服装鞋包tab------------*/
