@@ -27,9 +27,9 @@
     $.fn.jqzoom = function (options) {
         return this.each(function () {
             var node = this.nodeName.toLowerCase();
-            if (node == 'a') {
+            // if (node == 'a') {
                 new jqzoom(this, options);
-            }
+            // }
         });
     };
     jqzoom = function (el, options) {
